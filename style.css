@@ -1,0 +1,37 @@
+.main{
+    width:500px;
+    height:100px;
+    background-color: rgb(119, 119, 119);
+    margin-left:500px;
+}
+
+.ent{
+    overflow-x: hidden;
+    height:50px;
+    width: 500px;
+    position:absolute;
+    top:108px;
+}
+
+@keyframes deplacement {
+    0% {
+        transform: translate(-500px, 0);
+      }
+      99% {
+        transform: translate(500px, 0);
+      }
+}
+
+
+.sec{
+    position: absolute;
+    width: 0px;
+    height:50px;
+    background-color: rgb(59, 55, 55);
+    
+}
+
+.main:hover .ent .sec{
+    width:300px;
+    animation: deplacement 1s cubic-bezier(.4,.25,.6,.75) infinite;
+}
